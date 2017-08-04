@@ -1,0 +1,244 @@
+@charset "utf-8";
+* {margin: 0; padding: 0; border: 0; outline: 0; text-decoration: none;	list-style: none;}
+body {background: #333;}
+br.clear {clear: both;}
+#wrapper {
+	height: auto;
+	width: 980px;
+	margin: 10px auto;
+	font-size: 16px;
+}
+
+/*header*/
+
+header {
+	position: relative;
+	width: 100%;
+	height: 180px;
+	background: url(../Images/logoEssens.png) left 25px no-repeat;
+}
+header h1 {
+	position: absolute;
+	top: 46px;
+	right: 16px;
+	padding-right: 51px;
+	font: bold 25px/1 Georgia, "Times New Roman", Times, serif;
+	background: url(../Images/mailIcon.png) right bottom no-repeat;
+	color: #F90;
+}
+
+/*navigation*/
+
+nav {
+	width: 980px;
+	height: auto;
+	border-radius: 10px;
+	background: url(../Images/gradientLine.png) center top no-repeat,
+			   #006 url(../Images/gradientLine.png) center bottom no-repeat;
+	box-shadow: 0 2px 2px #003;
+}
+nav ul {
+	height: 68px;
+	margin: 0 0 0 100px;
+}
+nav ul li {
+	float: left;
+	width: 150px;
+	text-align: center;
+	font: bold 20px/1.4 "Times New Roman", Times, serif;
+}
+nav ul li:last-of-type {width: 170px; margin-left: 92px; background: url(../Images/fbIcon.png) center right no-repeat;}
+nav ul li a {
+	display: block;
+	line-height: 3.2em;
+	color: #31689A;
+}
+nav ul li a.active, nav ul li a:hover, footer section a:hover, footer section:first-of-type li a:hover, footer div a:hover, article > ul li a:hover{color: #F90;}
+
+/*article*/
+
+article {
+	position: relative;
+	height: auto;	
+}
+
+/*slider*/
+
+article #slider {
+	width: 100%;
+	margin: 20px 0;
+	border-radius: 10px;
+	box-shadow: 0 0 3px rgba(147, 234, 255, .4);
+	background: url(../Images/gradientLine.png) center top no-repeat,
+				#001357 url(../Images/gradientLine.png) center bottom no-repeat;
+}
+#slider > a {position: absolute; width: 59px; height: 86px; text-indent: -99999em; z-index: 99; top: 295px;}
+#slider > a:first-of-type {background: url(../Images/arrow-left.png) no-repeat top left; left: -29px;}
+#slider > a:last-of-type {background: url(../Images/arrow-right.png) no-repeat top left; right: -30px;}
+#slider .viewer {
+	width: 98%;
+	height: 605px;
+	margin: 0 10px 10px 10px;
+	z-index: 98;
+	overflow: hidden;	
+}
+#slider .viewer .reel .slide {width: 960px;	height: 605px; position: relative;}
+#slider .viewer .reel h2 {
+	position: absolute;
+	top: 295px;
+	left: 0;
+	width: 100%;
+	z-index: 5;
+	text-align: center;
+	color: #F90;
+	font: bold 25px/65px "Times New Roman", Times, serif;
+	background: url(../Images/sliderbg.png) repeat-x top left;
+	text-shadow: 1px 1px #000;
+}
+#slider .viewer .reel p {
+	position: absolute;
+	top: 375px;
+	left: 30px;
+	width: 900px;
+	z-index: 4;
+	text-align: center;
+	color: #CCC;
+	font: normal 16px/1.4 Verdana, Geneva, sans-serif;
+	text-shadow: .5px .5px #000;
+}
+#slider .viewer .reel img {margin: 20px 0 0 0;}
+#slider .indicator ul {text-align: center;}
+#slider .indicator ul li {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin: 15px 4px;
+	text-indent: -9999em;
+	background: #b1b1b1;
+	border-radius: 8px;
+}
+#slider .indicator ul li.active {background: #3d89b9;}	
+
+/*article*/
+
+article aside {
+	width: 960px;
+	height: auto;
+	margin: 0 10px;
+}
+aside iframe {
+	width: 310px;
+	height: 250px;
+	margin-right: 10px;
+}
+aside iframe:last-of-type {margin-right: 0!important;}
+
+/*ponuda*/
+
+article > ul {
+	width: 225px;
+	float: left;
+	margin: 150px 0 0 0;
+}
+article > ul li {margin: 8px 0; padding: 0 0 0 5px;}
+article > ul li a {
+	font: normal 14px/1.2 Verdana, Geneva, sans-serif;
+	color: rgba(255, 153, 51, .4);
+	transition: all .2s linear;
+}
+article #productContent {
+	width: 730px;
+	float: right;
+}
+section #productInformation h1 {
+	width: 665px;
+	padding: 0 0 5px 10%;
+	margin: 20px 0;
+	font: bold 22px/1.4 Georgia, "Times New Roman", Times, serif;
+	color: #F93;
+	background: url(../Images/productGradientLine.png) left bottom no-repeat;
+}
+section #productInformation img {
+	margin: 0 15px 0 0;
+	vertical-align: top;
+	border: 2px solid #FFF;	
+}
+section #productInformation p {
+	display: inline-block;
+	width: 79%;
+	font: normal 14px/1.4 Verdana, Geneva, sans-serif;
+	color: #CCC;
+}
+section #productInformation p span {color: #547FE8; text-shadow: 0 0 3px #000;}
+
+/*essens*/
+
+article .articleSection {
+	background: url(../Images/gradientLine2.png) bottom center no-repeat;
+	margin: 30px 0 0 0;
+	padding-bottom: 30px;
+}
+article .articleSection:last-of-type {background: none; padding: 0!important;}
+article .articleSection p {
+	width: 90%;
+	margin: 0 5%;
+	text-align: center;
+	color: #CCC; 
+	font: normal 1em/1.4 Verdana, Geneva, sans-serif;
+	text-shadow: .5px .5px #000;
+}
+article .articleSection ul {margin: 30px 5% 0 5%;}
+article .articleSection ul li {
+	font: normal 1em/1.8 Verdana, Geneva, sans-serif;
+	text-shadow: .5px .5px #000;
+	color: #CCC;
+	list-style-type: circle;
+}
+article .articleSection ul li:nth-of-type(even){color: #999;}
+article .articleSection h1 {font: normal 1.5em/1.4 "Times New Roman", Times, serif; color: #F90; padding-left: 10%;}
+
+/*footer*/
+
+footer {
+	width: 100%;
+	margin: 20px 0 0 0;
+	background: url(../Images/gradientLine.png) center top no-repeat;
+}
+footer section {
+	position: relative;
+	float: left;
+	width: 324px;
+	height: 200px;
+	margin: 0 4px 0 0;
+	opacity: .5;
+	transition: opacity .5s linear;
+}
+footer section:hover {opacity: 1;}
+footer section:last-of-type {margin-right: 0!important;}
+footer section > h1, footer section > a {position: absolute; font: normal 18px/1 Georgia, "Times New Roman", Times, serif; color: #999;}
+footer section:first-of-type ul {
+	margin: 35px 0 0 0;
+	text-align: center;
+}
+footer section:first-of-type li {
+	margin-bottom: 5px;
+	font: normal 18px/1.2 Georgia, "Times New Roman", Times, serif;
+	background: url(../Images/arrowRight.png) 20px center no-repeat;
+}
+footer section:first-of-type li a {color: #999; transition: color .3s linear;}
+footer section:nth-of-type(2) a {top: 60px;}
+footer section:last-of-type h1, footer section:last-of-type a {right: 16px; padding-right: 60px;}
+footer section:last-of-type h1 {top: 70px; background: url(../Images/mailIcon.png) right bottom no-repeat; cursor: pointer;}
+footer section:last-of-type a {
+	width: 45%;
+	top: 95px;
+	line-height: 1.6em;	
+	background: url(../Images/fbIcon.png) right center no-repeat;
+}
+footer div {
+	padding: 10px 0 0 0;
+	background: url(../Images/gradientLine.png) center top no-repeat;
+	color: #444;
+	text-align: center;
+}
+footer div a {color: #444;}
